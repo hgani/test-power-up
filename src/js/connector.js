@@ -23,6 +23,7 @@ const getWeatherBadges = (t, opts) =>
     t.get('member', 'private', 'units', defaultUnitForLocale(opts.locale)),
     t.get('board', 'shared'),
   ]).then(([card, units, prefs]) => {
+    console.log('Hello World123!');
     if (!card.coordinates) {
       // if the card doesn't have a location at all, we won't show any badges
       return [];
